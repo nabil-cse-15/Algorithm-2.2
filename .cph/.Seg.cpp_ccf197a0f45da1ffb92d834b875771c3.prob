@@ -1,0 +1,1 @@
+{"name":"Local: Seg","url":"d:\\Part-2 Even semester\\Algorithm\\Algorithm\\Seg.cpp","tests":[{"id":1753720958245,"input":"5\n1 3 5 2 4\n2\n1 3 2 3\n0 4 4 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Part-2 Even semester\\Algorithm\\Algorithm\\Seg.cpp","group":"local","local":true}
