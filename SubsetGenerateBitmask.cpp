@@ -1,3 +1,4 @@
+//if  There are at most 8 elements then this will be efficient
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
