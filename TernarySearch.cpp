@@ -1,35 +1,62 @@
 #include <bits/stdc++.h>
 using namespace std;
-int findIndex(vector<int> &v)
+
+int findMinIndex(vector<int> &arr)
 {
-    int low = 0, high = v.size() - 1;
-    int minindex = -1;
+    int low = 0, high = arr.size() - 1;
+    int minIndex = -1;
+
     while (low <= high)
     {
+
+        // divide the range into three parts
         int mid1 = low + (high - low) / 3;
         int mid2 = high - (high - low) / 3;
-        if (v[mid1] == v[mid2])
+
+        // if both mid1 and mid2 point to equal
+        // values narrow the search
+        if (arr[mid1] == arr[mid2])
         {
+
+            // Move towards the center
             low = mid1 + 1;
             high = mid2 - 1;
-            minindex = mid1;
+
+            // tentatively store mid1 as
+            // potential minimum
+            minIndex = mid1;
         }
-        else if (v[mid1] < v[mid2])
+
+        // if arr[mid1] < arr[mid2], the minimum lies in the
+        // left part (including mid1)
+        else if (arr[mid1] < arr[mid2])
         {
             high = mid2 - 1;
-            minindex = mid1;
+
+            // update with better candidate
+            minIndex = mid1;
         }
+
+        // is arr[mid1] > arr[mid2], the minimum lies in the
+        // right part (including mid2)
         else
         {
             low = mid1 + 1;
-            minindex = mid2;
+
+            // update with better candidate
+            minIndex = mid2;
         }
     }
-    return minindex;
+
+    return minIndex;
 }
+
 int main()
 {
-    vector<int> v = {6, 5, 4, 8, 3, 4, 6, 8};
-    int idx = findIndex(v);
+    vector<int> arr = {9, 7, 1, 2, 3, 6, 10};
+
+    int idx = findMinIndex(arr);
     cout << idx << endl;
+
+    return 0;
 }
