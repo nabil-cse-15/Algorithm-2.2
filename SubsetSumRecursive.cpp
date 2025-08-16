@@ -21,8 +21,9 @@ bool func(int ind, int target, vector<int> &arr) {
 }
 
 int main() {
-    vector<int> arr = {1, 2, 3, 2, 4, 5, 6};
-    int target = 5;
+    //vector<int> arr = {1, 2, 3, 2, 4, 5, 6};
+    vector<int>arr = {1, 5, 1, 4};
+    int target = 12;
 
     memset(dp, -1, sizeof(dp)); // initialize dp with -1
 
