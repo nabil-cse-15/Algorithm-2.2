@@ -1,0 +1,1 @@
+{"name":"Local: DijkstraAlgorithm","url":"d:\\Part-2 Even semester\\Algorithm Lab\\Algorithm\\DijkstraAlgorithm.cpp","tests":[{"id":1756216941010,"input":"5 4\n1 2\n3 2\n2 4 \n2 5\n\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Part-2 Even semester\\Algorithm Lab\\Algorithm\\DijkstraAlgorithm.cpp","group":"local","local":true}

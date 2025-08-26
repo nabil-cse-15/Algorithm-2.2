@@ -39,7 +39,7 @@ int main()
         int result = binarySearch(v, i + 1, s);
         if (result != -1)
         {
-            cout << i + 1 << " " << result + 1 << endl;
+          cout << i + 1 << " " << result + 1 << endl;
         }
     }
 }
